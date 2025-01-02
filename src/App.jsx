@@ -1,10 +1,16 @@
 import React from 'react'
 import HeroSection from './components/HeroSection'
+import HeroSection2 from './components/HeroSection2'
+import CuratedTours from './components/CuratedTours'
+import TourCard from './components/TourCard'
 const App = () => {
   return (
 
-    <div >
+    <div className='' >
       <HeroSection/>
+      <HeroSection2/>
+      <CuratedTours/>
+    
      </div>
 
   )
