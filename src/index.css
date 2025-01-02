@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open+Sans' ,sans-serif;
+}
+
+.hero-section {
+background-image: url('./assets/goldenTemple.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+min-height: 100vh;
+position: relative;
+}
+
+.hero-section::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+header {
+  padding: .2rem 0;
+}
+
+.container{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto ;
+  padding: 1rem 2rem;
+}
+
+.container nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.container nav .logo{
+  cursor: pointer;
+}
+
+
+  
+.container .nav-links {
+  display: flex;
+}
+
+.container ul li a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.7rem 1rem ;
+  display: block;
+  border-radius: 10px;
+  border-radius: 4px;
+  
+}
+
+.container ul li a:hover {
+  color: #f5a74f;
+  transition: 'all 0.3s ease-in-out'
+}
+
+.content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,  0% );
+}
+
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+
+}
+
+@media(max-width:1070px) {
+  .content h2{
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  .content p{
+    text-align: center;
+  }
+  .content {
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%,  0% );
+    width: 95%;
+  }
+  .icon{
+    display: block;
+    color: #f5a74f;
+    z-index: 10;
+  }
+  .container .nav-links{
+    /* display: none; */
+  }
+  .container button {
+    display: block;
+  }
+   .container  .nav-links{
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    position: absolute;
+    width: 360px;
+    height: 60vh;
+    top: -900px;
+    right: 0;
+    z-index: 20;
+    margin-right: 20px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 22px;
+   
+  }
+
+  .nav-links.active{
+    top: 15%;
+  }
+  .container ul li a {
+    color: rgb(40, 40, 40);
+    font-size: 1.1rem;
+    padding: 0.7rem 1rem ;
+    display: block;
+    border-radius: 10px;
+    border-radius: 4px;
+    z-index: 10;
+  }
+}
+
+@media(max-width:396px){
+  .container  .nav-links{
+    width: fit-content;
+  }
+  .book-button{
+    width: fit-content;
+  }
+  .hero-section {
+    background-image: url('./assets/goldenTemple.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 110vh;
+    position: relative;
+    }
+}
+
