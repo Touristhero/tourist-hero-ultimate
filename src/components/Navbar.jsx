@@ -11,8 +11,8 @@ const Navbar = () => {
     }
   return (
    <>
-   <header className=''>
-     <div className='container'>
+   <header className='  '>
+     <div className='container sticky top-0 z-50 overflow-y:scroll rounded-br-3xl rounded-bl-3xl  shadow-md  '>
          <nav >
             <div className='logo z-10'>
                 <img className='w-40' src={logo} alt="logo" />

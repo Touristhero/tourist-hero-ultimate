@@ -1,16 +1,16 @@
 import React from 'react'
-import photo1 from '../assets/images/WebsiteImages/wagah-border2.jpg'
+import photo1 from '../../assets/images/WebsiteImages/villagetour1.jpg'
 import { MdDateRange } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { RiThumbUpFill } from "react-icons/ri";
 
-const TourCard = () => {
+const TourCard4 = () => {
   return (
-    <div>
-        <div className=' px-40 py-10'>
-           <div className='w-1/4  border-2 border-grey-300 shadow-lg border-1  rounded-xl'> 
+    <div className=''>
+        <div className=' w-[310px]'>
+           <div className='  border-2 border-grey-300 shadow-lg border-1  rounded-xl'> 
               <img className='w-full rounded-tl-lg rounded-tr-lg' src={photo1} alt="" />
                <div className='starts flex text-orange-500 px-4 mt-4'>
                <FaStar />
@@ -19,7 +19,7 @@ const TourCard = () => {
                <FaStar />
                <FaStarHalf />
                </div>
-              <h2 className='text-[18px]  px-4 mt-2    font-semibold '>Wagah Border</h2>
+              <h2 className='text-[18px]  px-4 mt-2    font-semibold '>Village Tour</h2>
       
               <div className='flex'>
                <div className='flex items-center gap-1 text-[15px] ml-4 mt-4'>   
@@ -52,4 +52,4 @@ const TourCard = () => {
   )
 }
 
-export default TourCard
+export default TourCard4
