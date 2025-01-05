@@ -11,7 +11,7 @@ const TourCard5 = () => {
     <div className=''>
         <div className=' w-[310px]  '>
            <div className='  border-2 border-grey-300 shadow-lg border-1   rounded-xl'> 
-              <img className='w-full rounded-tl-lg rounded-tr-lg' src={photo1} alt="" />
+              <img className='w-full h-[230px] rounded-tl-lg rounded-tr-lg' src={photo1} alt="" />
                <div className='starts flex text-orange-500 px-4 mt-4'>
                <FaStar />
                <FaStar />

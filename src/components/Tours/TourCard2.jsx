@@ -1,16 +1,16 @@
 import React from 'react'
-import photo1 from '../../assets/images/WebsiteImages/guestcrowd.jpg'
+import photo1 from '../../assets/images/WebsiteImages/wagah-border2.jpg'
 import { MdDateRange } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { RiThumbUpFill } from "react-icons/ri";
 
-const TourCard2 = () => {
+const TourCard = () => {
   return (
     <div className=''>
-        <div className=' w-[310px] '>
-           <div className='  border-2 border-grey-300 shadow-lg border-1  rounded-xl'> 
+        <div className=' w-[310px]  '>
+           <div className='  border-2 border-grey-300 shadow-lg border-1   rounded-xl'> 
               <img className='w-full rounded-tl-lg rounded-tr-lg' src={photo1} alt="" />
                <div className='starts flex text-orange-500 px-4 mt-4'>
                <FaStar />
@@ -19,7 +19,7 @@ const TourCard2 = () => {
                <FaStar />
                <FaStarHalf />
                </div>
-              <h2 className='text-[18px]  px-4 mt-2    font-semibold '>Amritsar's Full Day Tour</h2>
+              <h2 className='text-[18px]  px-4 mt-2    font-semibold '>Wagah Border</h2>
       
               <div className='flex'>
                <div className='flex items-center gap-1 text-[15px] ml-4 mt-4'>   
@@ -30,7 +30,7 @@ const TourCard2 = () => {
               <div className='flex'>
                   <div className='flex items-center gap-1 text-[15px] ml-4 mt-4'>
                  <MdOutlineLocationOn />
-                  <h1>6 Places</h1>
+                  <h1>2 Places</h1>
                   </div>
                 </div>
       
@@ -52,4 +52,4 @@ const TourCard2 = () => {
   )
 }
 
-export default TourCard2
+export default TourCard

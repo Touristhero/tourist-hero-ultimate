@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        OpenSans:['Open Sans' ],
+        SignikaNegative:['Signika Negative' ],
+
+      }
+    },
+    
   },
   plugins: [],
 }

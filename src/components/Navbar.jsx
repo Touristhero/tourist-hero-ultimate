@@ -22,7 +22,6 @@ const Navbar = () => {
                 <li><a href="/Home">Home</a></li>
                 <li><a href="/CuratedTours">Curated Tours</a></li>
                 <li><a href="/TaxiServices">Taxi Services</a></li>
-                <li><a href="/GuestReviews">Guest Reviews</a></li>
                 <li><a href="/Gallery">Gallery</a></li>
                 <li><a href="/AboutUs">About Us</a></li>
             </ul>

@@ -1,5 +1,5 @@
 import React from 'react'
-import photo1 from '../../assets/images/WebsiteImages/wagah-border2.jpg'
+import photo1 from '../../assets/images/WebsiteImages/guestonly.jpg'
 import { MdDateRange } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
@@ -19,7 +19,7 @@ const TourCard6 = () => {
                <FaStar />
                <FaStarHalf />
                </div>
-              <h2 className='text-[18px]  px-4 mt-2    font-semibold '>Wagah Border</h2>
+              <h2 className='text-[18px]  px-4 mt-2    font-semibold '>Heritage Walk</h2>
       
               <div className='flex'>
                <div className='flex items-center gap-1 text-[15px] ml-4 mt-4'>   
