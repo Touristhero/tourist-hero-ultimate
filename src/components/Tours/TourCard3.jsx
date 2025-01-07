@@ -1,5 +1,5 @@
 import React from 'react'
-import photo1 from '../../assets/images/WebsiteImages/FoodTour.jpg'
+import photo1 from '../../assets/images/Gallery/galleryPhoto5.jpg'
 import { MdDateRange } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";

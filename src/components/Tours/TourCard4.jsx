@@ -1,5 +1,5 @@
 import React from 'react'
-import photo1 from '../../assets/images/WebsiteImages/villagetour1.jpg'
+import photo1 from '../../assets/images/WebsiteImages/Tractor-with-on-it.jpg'
 import { MdDateRange } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
@@ -9,9 +9,9 @@ import { RiThumbUpFill } from "react-icons/ri";
 const TourCard4 = () => {
   return (
     <div className=''>
-        <div className=' w-[310px]'>
+        <div className=' w-[310px] '>
            <div className='  border-2 border-grey-300 shadow-lg border-1  rounded-xl'> 
-              <img className='w-full rounded-tl-lg rounded-tr-lg' src={photo1} alt="" />
+              <img className='w-full h-[230px] object-cover rounded-tl-lg rounded-tr-lg' src={photo1} alt="" />
                <div className='starts flex text-orange-500 px-4 mt-4'>
                <FaStar />
                <FaStar />

@@ -13,13 +13,23 @@ import Footer from './components/Footer'
 import AboutUs1 from './components/AboutUsMain/AboutUs1'
 import Home from './components/Home/Home'
 import Booking from './components/Booking'
+import GoldenTemple from './components/TourCard-Details/GoldenTemple'
+import WagahBorder from './components/TourCard-Details/WagahBorder'
+import FoodTour from './components/TourCard-Details/FoodTour'
+import VillageTour from './components/TourCard-Details/VillageTour'
+import NightCeremony from './components/TourCard-Details/NightCeremony'
 const App = () => {
   return (
 
 
     <div className='' >
-      <Home/>
+      {/* <Home/> */}
       {/* <Booking/> */}
+      {/* <GoldenTemple/> */}
+      {/* <WagahBorder/> */}
+      {/* <FoodTour/> */}
+      {/* <VillageTour/> */}
+      <NightCeremony/>
      </div>
 
   )

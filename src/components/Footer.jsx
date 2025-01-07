@@ -13,7 +13,7 @@ import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
    <>
-    <div className='mt-32 footer-container  grid grid-cols-3 w-full px-4 py-5 bg-black bg-opacity-90 '>
+    <div className='mt-32 footer-container  grid grid-cols-3 w-full px-4 py-5 bg-gray-800 bg-opacity-90 '>
       
       <div className='lg:px-10   lg:py-5 sm:px-3 md:px-3'>
       <img className='w-[11rem] z-100' src={logo} alt="" />
@@ -65,7 +65,7 @@ const Footer = () => {
        
           
     </div>
-     <div className='bg-black bg-opacity-90 '>
+     <div className='bg-gray-800 bg-opacity-90 '>
         <hr className='px-3 py-2' />
         <h1 className='text-white py-2 px-2'>Tourist Hero Private Limited © 2025 All Rights Reserved</h1>
      </div>

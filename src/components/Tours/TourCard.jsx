@@ -17,7 +17,7 @@ const TourCard2 = () => {
                <FaStar />
                <FaStar />
                <FaStar />
-               <FaStarHalf />
+               <FaStar/>
                </div>
               <h2 className='text-[18px]  px-4 mt-2    font-semibold '>Golden Temple</h2>
       
