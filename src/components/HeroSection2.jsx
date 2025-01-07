@@ -14,7 +14,7 @@ const HeroSection2 = () => {
            <video src={video} loop autoPlay muted className='w-[600px] video '></video>
         </div>
        <div className='w-[50%] paragraph    text-2xl'>
-       <p className='text-[1.2rem] text-slate-600 font-SignikaNegative   '>
+       <p className='text-[1.2rem] text-slate-700 font-SignikaNegative font-light  '>
        Amritsar, the heart of Punjab, is a city steeped in spirituality, history, and culture. The iconic Golden Temple, the soul of Sikhism, radiates peace and equality, while Jallianwala Bagh serves as a poignant reminder of India’s freedom struggle. Visitors can experience patriotic fervor at the Wagah Border or explore history at the Partition Museum. The Durgiana Temple and Gobindgarh Fort add to its charm, while Hall Bazaar offers authentic shopping delights. Renowned for its culinary treasures like Amritsari kulcha and lassi, Amritsar welcomes visitors with warmth and vibrant traditions, leaving a lasting impression on all who visit.
         </p></div>
     

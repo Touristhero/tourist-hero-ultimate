@@ -1,9 +1,8 @@
 import React, { useState ,useEffect} from 'react'
 import logo from '../assets/logos/tourist-hero-logo.png'
 import { FaBars } from "react-icons/fa";
-import home from '../components/Home/Home'
 
-const Navbar = () => {
+const Navbar2 = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -42,25 +41,25 @@ const Navbar = () => {
             </div>
             <ul className={isOpen ? "nav-links active" : "nav-links  transition-all duration-300 ease-in-out "}>
                 <li   className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
-            scrolled ? 'text-slate-600 ' : 'text-white'
-          }`} ><a href={home}>Home</a></li>
+            scrolled ? 'text-slate-600 ' : 'text-slate-600'
+          }`} ><a href="/Home">Home</a></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
-            scrolled ? 'text-slate-600 ' : 'text-white'
+            scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><a href="/AboutUs">About Us</a></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
-            scrolled ? 'text-slate-600 ' : 'text-white'
+            scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><a href="/CuratedTours">Curated Tours</a></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
-            scrolled ? 'text-slate-600 ' : 'text-white'
+            scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`} ><a href="/TaxiServices">Taxi Services</a></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
-            scrolled ? 'text-slate-600 ' : 'text-white'
+            scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><a href="/Gallery">Gallery</a></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
-            scrolled ? 'text-slate-600 ' : 'text-white'
+            scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><a href="/GuestReview">Guest Review</a></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
-            scrolled ? 'text-slate-600 ' : 'text-white'
+            scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><a href="/ContactUs">Contact Us</a></li>
 
             </ul>
@@ -77,4 +76,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar2

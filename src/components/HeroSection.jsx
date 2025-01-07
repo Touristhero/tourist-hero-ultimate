@@ -15,7 +15,7 @@ const HeroSection = () => {
   return (
     < >
     <div className='hero-section '>
-    <Navbar />
+
     <div className='content z-10 '>
       <h2 className='text-white text-center text-5xl font-semibold mb-3'>{heading}</h2>
       <p className='text-white text-lg text-center'> {description} </p>

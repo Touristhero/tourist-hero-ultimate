@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens:{
+        'custom-sm':'600px',
+        xs: '480px',
+      },
       fontFamily: {
         OpenSans:['Open Sans' ],
         SignikaNegative:['Signika Negative' ],

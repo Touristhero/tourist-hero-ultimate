@@ -9,7 +9,7 @@ import photo4 from '../assets/images/WebsiteImages/Dharamshala-India.jpg'
 const Package = () => {
   return (
     <div className=' package p-10'>
-      <h1 className='tour-heading  ml-[3.5rem] mt-20 text-4xl  text-slate-600 font-semibold font-sans'>Private Tour Package</h1>
+      <h1 className='tour-heading  ml-[3.5rem] mt-20 text-3xl  text-slate-600 font-semibold font-sans'>Private Tour Package</h1>
       <div className=' package-container flex gap-10 mt-10 justify-center'>
         <a href="">
         <div className='relative rounded-lg '>

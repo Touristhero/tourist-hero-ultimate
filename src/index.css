@@ -30,26 +30,23 @@ position: relative;
 }
 
 header {
-  padding: .2rem 0;
   position: sticky;
   top:0;
-  z-index: 50;
+  z-index: 20;
 
 }
 
 .container{
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto ;
-  padding: 1rem 2rem;
-  
+
 }
 
 .container nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
- ;
+
 }
 
 .container nav .logo{
@@ -57,25 +54,13 @@ header {
 }
 
 
-  
 .container .nav-links {
   display: flex;
+  gap:3rem;
 }
 
-.container ul li a {
-  color: white;
-  font-size: 1.1rem;
-  padding: 0.7rem 1rem ;
-  display: block;
-  border-radius: 10px;
-  border-radius: 4px;
-  
-}
 
-.container ul li a:hover {
-  color: #f5a74f;
-  transition: 'all 0.3s ease-in-out'
-}
+
 
 .content {
   position: absolute;
@@ -120,24 +105,28 @@ header {
     display: block;
   }
    .container  .nav-links{
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     background-color: white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    gap: 0rem;
+    width:70%;
     position: absolute;
-    width: 360px;
     height: 60vh;
     top: -900px;
     right: 0;
-    z-index: 20;
-    margin-right: 20px;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 22px;
+    z-index: 10;
+    margin-right: 30px;
+    margin-left: 10px;
+    padding: 1rem;
+    border-radius: 5px;
    
   }
 
   .nav-links.active{
-    top: 15%;
+    top: 110%;
   }
   .container ul li a {
     color: rgb(40, 40, 40);
@@ -152,7 +141,9 @@ header {
 
 @media(max-width:396px){
   .container  .nav-links{
-    width: fit-content;
+    padding: 10px;
+    width: 80%;
+    margin-left: 40px;
   }
   .book-button{
     width: fit-content;
@@ -329,4 +320,146 @@ header {
   margin-top: 2rem;
   width: 100%;
 }
+}
+
+
+@media (max-width:1008px){
+   .review-container{
+    padding: 10px 20px;
+   }
+}
+@media (max-width:1008px){
+  .review-container{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+  }
+  .review-container img {
+    width: auto;
+  }
+}
+
+@media (max-width:1008px){
+  .review-container{
+   padding: 10px 20px;
+  }
+  .review-container p {
+    width: 100%;
+
+  }
+  .review-container .review-child {
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width:1034px) {
+  .aboutus-container{
+    padding: 10px 10px;
+  }
+}
+
+@media(max-width:889px){
+  .aboutus-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 0px 0px;
+  }
+  .aboutus-child{
+    padding: 20px 20px;
+  }
+}
+
+@media(max-width:462px){
+  .aboutus-child{
+    padding: 10px 10px;
+    width: 100%;
+  }
+}
+
+@media(max-width:775px){
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    
+  }
+  .footer-child{
+    padding: 10px 20xp;
+    display: flex;
+    margin-right: 10rem;
+  }
+}
+
+@media (max-width:891px) {
+  .about-us-main{
+   display: flex;
+   flex-direction: column;
+   padding: 20px 20px;
+   margin-top: 20px;
+
+  }
+  .about-us-main img ,p {
+   width: auto;
+    
+ 
+   }
+   .about-us-main p {
+    width: auto;
+
+    }
+}
+
+
+@media (max-width:1056px) {
+  .booking-container{
+    padding: 35px 25px;
+  }
+  .booking-container img{
+    width: 40%;
+  }
+}
+
+@media (max-width:842px) {
+  .booking-container img{
+    width: 35%;
+  }
+}
+
+@media (max-width:790px) {
+  .booking-container img{
+   display: none;
+  }
+  .booking-container input {
+    width: 100%;
+  }
+  .booking-container select {
+    width: 100%;
+  }
+  .booking-container button {
+    width: 100%;
+  }
+}
+
+@media (max-width:572px) {
+  .booking-heading{
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+@media (max-width:391px) {
+  .booking-heading{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .booking-child{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+   .input-child {
+    margin-left: 0px;
+    margin-top: 1.3rem;
+   }
 }

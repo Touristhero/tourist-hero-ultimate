@@ -19,7 +19,7 @@ import TourCard6 from './Tours/TourCard6';
 const CuratedTours = () => {
   return (
     <>
-    <h1 className=' tour-heading tour-heading ml-20 mt-20 text-4xl  text-slate-600 font-semibold font-sans'> Top-Rated Tours in Amritsar</h1>
+    <h1 className=' tour-heading tour-heading ml-20 mt-20 text-3xl text-slate-600 font-semibold font-sans'> Top-Rated Tours in Amritsar</h1>
     <div className=' main-container flex items-center justify-center ml-18'>
        <div className='  card-container grid grid-cols-3 gap-14 mt-10'>
        <TourCard2/>
