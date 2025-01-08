@@ -511,3 +511,30 @@ header {
     width: 80%;
   }
 }
+
+@media (max-width:1241px) {
+  .fleet-container{
+   padding: 20px 30px;
+  }
+}
+
+@media (max-width:1241px) {
+  .fleet-container{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+  }
+  .fleet-child {
+    padding: 20px;
+  }
+}
+
+@media (max-width:545px) {
+  .fleet-container{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+   padding: 10px 20px;
+  }
+  .fleet-child {
+    padding: 20px;
+  }
+}

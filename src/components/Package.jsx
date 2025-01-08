@@ -3,6 +3,10 @@ import photo from '../assets/images/WebsiteImages/guest-photo-20.jpg'
 import photo2 from '../assets/images/WebsiteImages/guestcrowd.jpg'
 import photo3 from '../assets/images/WebsiteImages/Tractor-with-on-it.jpg'
 import photo4 from '../assets/images/WebsiteImages/Dharamshala-India.jpg'
+import AmritsarDay1 from './Itenery-Details/AmritsarDay1'
+import AmritsarDay2 from './Itenery-Details/AmritsarDay2'
+import AmritsarDay3 from './Itenery-Details/AmritsarDay3'
+import DharamshalDay4 from './Itenery-Details/DharamshalDay4'
 
 
 
@@ -85,7 +89,10 @@ const Package = () => {
 
      </a>
 
+   
+
       </div>
+      
     </div>
   )
 }

@@ -63,9 +63,9 @@ const Booking = () => {
        </div>
        <select required  name="transportation" className='border-2 w-[82%] mt-5 px-3 py-2 rounded '  id="">
         <option value="Choose Transportation" selected disabled> Choose Transportation</option>
-        <option value="">Swift Dzire</option>
-        <option value="">Toyoto Etios</option>
-        <option value="">Innova Crysta</option>
+        <option value="">Swift Dzire (3 seater)</option>
+        <option value="">Toyoto Etios (3 seater) </option>
+        <option value="">Innova Crysta (6 seater)</option>
         <option value="">Tempo Traveller 12 seater</option>
         <option value="">Tempo Traveller 17 seater</option>
         <option value="">Without Any Transportation</option>

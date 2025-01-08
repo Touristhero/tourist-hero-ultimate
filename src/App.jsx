@@ -18,6 +18,9 @@ import WagahBorder from './components/TourCard-Details/WagahBorder'
 import FoodTour from './components/TourCard-Details/FoodTour'
 import VillageTour from './components/TourCard-Details/VillageTour'
 import NightCeremony from './components/TourCard-Details/NightCeremony'
+import HeritageWalk from './components/TourCard-Details/HeritageWalk'
+import HireTaxiServices from './components/TaxiServices/HireTaxiServices'
+import Tours from './components/CuratedTour/Tours'
 const App = () => {
   return (
 
@@ -29,7 +32,13 @@ const App = () => {
       {/* <WagahBorder/> */}
       {/* <FoodTour/> */}
       {/* <VillageTour/> */}
-      <NightCeremony/>
+      {/* <NightCeremony/> */}
+      {/* <HeritageWalk/> */}
+      {/* <AboutUs1/> */}
+      {/* <HireTaxiServices/> */}
+      {/* <Package/> */}
+      {/* <Tours/> */}
+      
      </div>
 
   )

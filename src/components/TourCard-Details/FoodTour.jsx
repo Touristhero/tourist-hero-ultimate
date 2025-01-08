@@ -2,6 +2,7 @@
 import React from 'react'
 import Navbar2 from '../Navbar2'
 import photo1 from '../../assets/images/Gallery/galleryPhoto5.jpg'
+
 import Package from '../Package'
 import CuratedTours from '../CuratedTours'
 import Review from '../Review/Review'
@@ -15,7 +16,7 @@ const FoodTour = () => {
      <div className='px-10 temple-container ' >
       <div className='flex flex-col items-center temple-child'>
        <h1 className='mt-32 temple-head text-5xl font-SignikaNegative font-semibold text-slate-500 mb-5' >Food Tour</h1>
-        <img src={photo1} className='w-[44%] object-cover rounded-lg  ' alt="" />
+        <img src={photo1} className='w-[35%] object-cover rounded-lg  ' alt="" />
       </div>
       <p className='mt-10 text-[1.1rem] font-SignikaNegative px-5 py-3 bg-orange-200 bg-opacity-30 rounded-lg leading-9 text-slate-600'>Amritsar is world famous for its amazing food restaurants. We will take you on an 7-kilometer leisure walk through both old and new areas of Amritsar, stopping to taste Punjabi culinary delights along the way. You will have the opportunity to try 18-20 popular dishes from 10 famous shops across the city. Don't worry though; all of the dishes are shared so that you can make it through all eighteen! 
 The tour starts around 10:30 a.m. 
@@ -38,6 +39,8 @@ All the food we are sampling is vegetarian and some restaurants have been servin
 
   <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[30%] rounded-3xl'>Book Now </button></div>
     </div>
+            
+             
 
      <Package/>
      <CuratedTours/>

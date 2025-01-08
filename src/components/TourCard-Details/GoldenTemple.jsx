@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar2 from '../Navbar2'
 import photo1 from '../../assets/images/WebsiteImages/goldenTemple.jpg'
+
+
+
 import Package from '../Package'
 import CuratedTours from '../CuratedTours'
 import Review from '../Review/Review'
@@ -14,7 +17,7 @@ const GoldenTemple = () => {
      <div className='px-10 temple-container ' >
       <div className='flex flex-col items-center temple-child'>
        <h1 className='mt-32 temple-head text-5xl font-SignikaNegative font-semibold text-slate-500 mb-5' >Golden Temple</h1>
-        <img src={photo1} className='w-[44%] object-cover rounded-lg  ' alt="" />
+        <img src={photo1} className='w-[35%] object-cover rounded-lg  ' alt="" />
       </div>
       <p className='mt-10 text-[1.1rem] font-SignikaNegative px-5 py-3 bg-orange-200 bg-opacity-30 rounded-lg leading-9 text-slate-600'>Harimandir  Sahib or Darbar Sahib, or the Golden Temple, is the holiest temple for Sikhs. Nearly 100,000 people visit the temple each day, and numbers nearly double during festivals/weekends. 
 
@@ -43,6 +46,8 @@ Our guide will walk with you through the beautiful Golden Temple while explainin
   <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[30%] rounded-3xl'>Book Now </button></div>
     </div>
 
+
+ 
      <Package/>
      <CuratedTours/>
      <Review/>

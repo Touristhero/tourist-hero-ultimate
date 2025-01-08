@@ -13,7 +13,7 @@ const WagahBorder = () => {
      <div className='px-10 temple-container ' >
       <div className='flex flex-col items-center temple-child'>
        <h1 className='mt-32 temple-head text-5xl font-SignikaNegative font-semibold text-slate-500 mb-5' >Wagah Border </h1>
-        <img src={photo1} className='w-[44%] object-cover rounded-lg  ' alt="" />
+        <img src={photo1} className='w-[35%] object-cover rounded-lg  ' alt="" />
       </div>
       <p className='mt-10 text-[1.1rem] font-SignikaNegative px-5 py-3 bg-orange-200 bg-opacity-30 rounded-lg leading-9 text-slate-600'>Border tour With a Stopover at the Lal Mata Mandir: Dedicated to female saint Lal Devi, this temple is regarded as a miniature of the popular Vaishno Devi temple in Jammu because of its similar structure.
 The Wagah border closing 'lowering of the flags' ceremony or the Beating Retreat ceremony is a daily military practice that the security forces of India (Border Security Force) and Pakistan (Pakistan Rangers) have jointly followed since 1959. This ceremony takes place every evening before sunset at the Wagah border, which as part of the Grand Trunk Road was the only road link between these two countries before the opening of the Aman Setu in Kashmir in 1999. The ceremony starts with a blustering parade by the soldiers from both the sides, and ends up in the perfectly coordinated lowering of the two nations' flags. It is called the beating retreat border ceremony on the international level. Awesomely choreographed like a Bollywood Event, an awesome experience mixed with fake aggressive gestures but true passion from the crowds.
@@ -38,9 +38,10 @@ The time of the ceremony changes as per the sunset time.
 
   <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[30%] rounded-3xl'>Book Now </button></div>
     </div>
-
+         
+       
      <Package/>
-     <CuratedTours/>
+     <CuratedTours/> 
      <Review/>
      <AboutUs/>
      <Footer/>
