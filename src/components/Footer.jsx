@@ -60,7 +60,7 @@ const Footer = () => {
 
             <div className='flex mt-4 ml-1 items-center justify-start gap-4 '>
             <BsFillTelephoneFill className='text-white ' />
-            <h1 className='text-white w-[100%]'>85281 30002 WhatsApps Only </h1>
+            <h1 className='text-white w-[100%]'> +91 85281 30002  </h1>
             </div>
 
             <div className='flex mt-3 items-center justify-start ml-1  gap-4 '>
