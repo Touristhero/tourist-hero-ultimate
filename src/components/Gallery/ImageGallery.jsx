@@ -48,12 +48,12 @@ const ImageGallery = () => {
     
       {data.img && 
      <div
-     className="fixed inset-0 bg-black bg-opacity-90 flex justify-center z-20 items-center"
+     className="fixed preview-container inset-0 bg-black bg-opacity-90 flex justify-center z-20 items-center"
      >  
      <button onClick={()=>imgAction('') } className=' absolute top- z-2  right-7 font-semibold font-SignikaNegative text-xl rounded  bg-white px-4 '>X</button>
-     <button onClick={()=>imgAction('previous-image') } className='text-white bg-[#e38e3d] mr-5 px-4 py-2 rounded'>Previous</button>
+     <button onClick={()=>imgAction('previous-image') } className='text-white previous-photo bg-[#e38e3d] mr-5 px-4 py-2 rounded'>Previous</button>
         <img className="max-w-[90%] rounded-lg max-h-[90%] object-contain" src={data.img} alt="" />
-        <button className='text-white bg-[#e38e3d] ml-5 px-4 py-2 rounded' onClick={()=>imgAction('next-image')}>Next</button>
+        <button className='text-white next-photo bg-[#e38e3d] ml-5 px-4 py-2 rounded' onClick={()=>imgAction('next-image')}>Next</button>
      </div>
     }
     

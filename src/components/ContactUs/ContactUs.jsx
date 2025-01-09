@@ -6,6 +6,7 @@ import ImageGallery from '../Gallery/ImageGallery'
 import AboutUs from '../AboutUs'
 import Footer from '../Footer'
 import Swal from 'sweetalert2'
+import GuestReview from '../Review/GuestReview'
 
 const ContactUs = () => {
     
@@ -112,7 +113,7 @@ const ContactUs = () => {
       <img className='w-[50%] rounded-lg object-cover' src={photo} alt="" />
       {/* <h1 className='w-[60%] px-3 text-[4vw]  font-SignikaNegative text-center mt-2 text-oran'>You are just few clicks <span className='text-orange-600' >away from us.</span></h1> */}
      </div>
-      <Review/>
+     <GuestReview/>
       <ImageGallery/>
       <AboutUs/>
       <Footer/>
