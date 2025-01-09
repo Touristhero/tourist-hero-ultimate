@@ -10,8 +10,8 @@ import Photo7 from '../../assets/images/Gallery/galleryPhoto7.jpg'
 import Photo8 from '../../assets/images/Gallery/galleryPhoto8.jpg'
 import Photo9 from '../../assets/images/Gallery/galleryPhoto9.jpg'
 import Photo12 from '../../assets/images/Gallery/galleryPhoto12.jpg'
-
-
+import Gallery from './Gallery'
+import { Link } from 'react-router-dom'
 
 
 const images = [
@@ -78,7 +78,7 @@ const ImageGallery = () => {
     </div>
 
     <div className='flex justify-center mt-10'>
-        <button className='bg-[#e38e3d] px-5 py-2  rounded-3xl text-white'>View More</button>
+        <button className='bg-[#e38e3d] px-5 py-2  rounded-3xl text-white'><Link to="/Gallery">View More</Link></button>
       </div>
     </>
   )

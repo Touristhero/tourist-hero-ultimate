@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar2 from '../Navbar2'
-import photo from '../../assets/images/WebsiteImages/guest-photo-20.jpg'
+import photo from '../../assets/images/WebsiteImages/Dharamshala-India.jpg'
 import AmritsarDay2 from '../Itenery-Details/AmritsarDay2'
 import AmritsarDay3 from '../Itenery-Details/AmritsarDay3'
 import DharamshalDay4 from '../Itenery-Details/DharamshalDay4'
@@ -8,10 +8,14 @@ import CuratedTours from '../CuratedTours'
 import Review from '../Review/Review'
 import AboutUs from '../AboutUs'
 import Footer from '../Footer'
+import AmritsarDay1 from '../Itenery-Details/AmritsarDay1'
+import GuestReview from '../Review/GuestReview'
+import Booking from '../Booking'
+import { Link } from 'react-router-dom'
 const DharamshalaDay4Details = () => {
   return (
     <div>
-    <Navbar2/>
+
    <h1 className='text-5xl font-semibold mt-32 text-center text-slate-500 font-SignikaNegative '>Curated Tour </h1>
     
      <div className=' package-container1 flex justify-center  gap-20 mt-20  px-8'>
@@ -104,23 +108,23 @@ The ceremony begins in the early hours of the morning or evening, depending on t
 The Palki Sahib is an elaborate wooden structure adorned with fine decorations, often gold-plated, that is lifted with care and precision by the devotees. The procession is marked by prayers and hymns, with the Harmandir Sahib reverberating with the melodious recitations of Gurbani (Sikh hymns). This ceremony is an expression of devotion and respect towards the Guru, fostering a sense of community and spiritual unity.</p>
             </div>
 
-            <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[40%] rounded-3xl'>Book Now </button></div>
+            <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[40%] rounded-3xl'><Link to="/Booking" >Book Now</Link> </button></div>
              
             <h1 className='text-[2.5rem] mt-20 font-SignikaNegative font-semibold text-slate-600'>Other Packages</h1>
             <div className='flex package-container  gap-10 justify-center  ' >
+                <AmritsarDay1/>
                 <AmritsarDay2/>
-                <AmritsarDay3/>
             
             </div>
             <div className='flex justify-center  ' >
-               <DharamshalDay4/>
+               <AmritsarDay3/>
                
             </div>
            
         </div>
 
         <CuratedTours/>
-        <Review/>
+        <GuestReview/>
         <AboutUs/>
         <Footer/>
 </div>

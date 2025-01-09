@@ -1,10 +1,13 @@
 import React from 'react'
 import photo2 from '../../assets/images/WebsiteImages/guestcrowd.jpg'
+import { Link } from 'react-router-dom'
+import AmritsarDay2Details from '../Package-Tour-Detail/AmritsarDay2Details'
+
 
 const AmritsarDay2 = () => {
   return (
     <div className='package-container flex gap-10 mt-10 justify-center   '>
-           <a href="">
+           <Link to='/AmritsarDay2Details' >
             <div className='relative'>
             <div className='absolute z-10 '>
             <h1 className='package-day-head p-5 text-7xl font-SignikaNegative font-semibold
@@ -19,9 +22,9 @@ const AmritsarDay2 = () => {
                       
                   </ul>
             <img className='w-[40rem] h-[350px] opacity-90 object-cover rounded-lg bg-slate-400 ' src={photo2} alt="" />
-            <div class="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
             </div>
-            </a>
+            </Link>
       
     </div>
   )

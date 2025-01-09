@@ -7,6 +7,11 @@ import AmritsarDay1 from './Itenery-Details/AmritsarDay1'
 import AmritsarDay2 from './Itenery-Details/AmritsarDay2'
 import AmritsarDay3 from './Itenery-Details/AmritsarDay3'
 import DharamshalDay4 from './Itenery-Details/DharamshalDay4'
+import { Link } from 'react-router-dom'
+import AmritsarDay1Details from './Package-Tour-Detail/AmritsarDay1Details'
+import AmritsarDay2Details from './Package-Tour-Detail/AmritsarDay2Details'
+import AmritsarDay3Details from './Package-Tour-Detail/AmritsarDay3Details'
+import DharamshalaDay4Details from './Package-Tour-Detail/DharamshalaDay4Details'
 
 
 
@@ -15,7 +20,7 @@ const Package = () => {
     <div className=' package p-10'>
       <h1 className='tour-heading  ml-[3.5rem] mt-20 text-3xl  text-slate-600 font-semibold font-sans'>Private Tour Package</h1>
       <div className=' package-container flex gap-10 mt-10 justify-center'>
-        <a href="">
+        <Link to="/AmritsarDay1Details" >
         <div className='relative rounded-lg '>
             <h1 className='absolute package-day-head p-5 text-7xl font-SignikaNegative font-semibold
             ml-10 mt-6 text-white z-10'>AMRITSAR DAY 1</h1>
@@ -31,10 +36,10 @@ const Package = () => {
       <div class="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
 
        </div>
-        </a>
+        </Link>
 
 
-      <a href="">
+      <Link to="/AmritsarDay2Details">
       <div className='relative'>
       <div className='absolute z-10 '>
       <h1 className='package-day-head p-5 text-7xl font-SignikaNegative font-semibold
@@ -50,14 +55,14 @@ const Package = () => {
       <img className='w-[40rem] h-[350px] opacity-90 object-cover rounded-lg bg-slate-400 ' src={photo2} alt="" />
       <div class="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
       </div>
-      </a>
+      </Link>
 
 
       </div>
 
 
       <div className='flex package-container  gap-10 mt-10 justify-center'>
-       <a href=""> <div className='relative rounded-lg'>
+       <Link to="/AmritsarDay3Details"> <div className='relative rounded-lg'>
             <h1 className='absolute p-5 package-day-head text-7xl font-SignikaNegative font-semibold
             ml-10 mt-6 text-white z-10'>AMRITSAR DAY 3</h1>
             <ul className='absolute right-10 top-40 z-10  rounded-lg px-4 py-3' >
@@ -70,9 +75,9 @@ const Package = () => {
         <img className='w-[650px] h-[350px] object-cover rounded-lg' src={photo3} alt="" />
       <div class="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
 
-       </div></a>
+       </div></Link>
      
-     <a href="">
+     <Link to="/DharamshalaDay4Details">
      <div className='relative '>
       <h1 className='absolute package-day-head p-5 text-7xl font-SignikaNegative font-semibold
             ml-10 mt-6 text-white z-10 '> DHARAM SHALA DAY 4</h1>
@@ -87,7 +92,7 @@ const Package = () => {
       <div class="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
       </div>
 
-     </a>
+     </Link>
 
    
 

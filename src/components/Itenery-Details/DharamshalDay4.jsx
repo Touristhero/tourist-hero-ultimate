@@ -1,11 +1,13 @@
 import React from 'react'
 import photo4 from '../../assets/images/WebsiteImages/Dharamshala-India.jpg'
+import { Link } from 'react-router-dom'
+import DharamshalaDay4Details from '../Package-Tour-Detail/DharamshalaDay4Details'
 
 const DharamshalDay4 = () => {
   return (
     <div className='package-container flex gap-10 mt-10 justify-center'>
           
-           <a href="">
+           <Link to='/DharamshalaDay4Details'>
            <div className='relative '>
             <h1 className='absolute package-day-head p-5 text-7xl font-SignikaNegative font-semibold
                   ml-10 mt-6 text-white z-10 '> DHARAM SHALA DAY 4</h1>
@@ -17,10 +19,10 @@ const DharamshalDay4 = () => {
                       
                   </ul>
             <img className='w-[650px] h-[350px] opacity-90 object-cover rounded-lg bg-slate-400 ' src={photo4} alt="" />
-            <div class="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
             </div>
       
-           </a>
+           </Link>
       
     </div>
   )

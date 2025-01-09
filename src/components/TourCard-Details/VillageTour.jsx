@@ -8,7 +8,9 @@ import CuratedTours from '../CuratedTours'
 import Review from '../Review/Review'
 import AboutUs from '../AboutUs'
 import Footer from '../Footer'
-
+import GuestReview from '../Review/GuestReview'
+import Booking from '../Booking'
+import { Link } from 'react-router-dom'
 const VillageTour = () => {
   return (
     <>
@@ -35,14 +37,14 @@ const VillageTour = () => {
  
 </div>
 
-<div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[30%] rounded-3xl'>Book Now </button></div>
+<div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[30%] rounded-3xl'><Link to="/Booking" >Book Now</Link></button></div>
  </div>
 
          
 
   <Package/>
   <CuratedTours/>
-  <Review/>
+  <GuestReview/>
   <AboutUs/>
   <Footer/>
  </>

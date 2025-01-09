@@ -43,7 +43,7 @@ const App = () => {
       <ScrollToTop/>
       <Routes>
         
-        <Route path='/Home' element={<Home/>} />  
+        <Route path='/' element={<Home/>} />  
         <Route path='/AboutUs' element={<AboutUs1/>} />  
         <Route path='/CuratedTours' element={<Tours/>} />  
         <Route path='/HireTaxiServices' element={<HireTaxiServices/>} />  
@@ -51,6 +51,18 @@ const App = () => {
         <Route path='/Review' element={<Review/>} />  
         <Route path='/ContactUs' element={<ContactUs/>} />  
         <Route path='/Booking' element={<Booking/>}/>
+        <Route path='/GoldenTemple' element={<GoldenTemple/>}/>
+        <Route path='/WagahBorder' element={<WagahBorder/>}/>
+        <Route path='/FoodTour' element={<FoodTour/>}/>
+        <Route path='/VillageTour' element={<VillageTour/>}/>
+        <Route path='/NightCeremony' element={<NightCeremony/>}/>
+        <Route path='/HeritageWalk' element={<HeritageWalk/>}/>
+        <Route path='/AmritsarDay1Details' element={<AmritsarDay1Details/>}/>
+        <Route path='/AmritsarDay2Details' element={<AmritsarDay2Details/>}/>
+        <Route path='/AmritsarDay3Details' element={<AmritsarDay3Details/>}/>
+        <Route path='/DharamshalaDay4Details' element={<DharamshalaDay4Details/>}/>
+
+        
        
       </Routes>
       {/* <Home/> */}

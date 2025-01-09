@@ -7,6 +7,14 @@ import { FaGoogle } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import Home from './Home/Home';
+import AboutUs1 from './AboutUsMain/AboutUs1';
+import CuratedTours from './CuratedTours';
+import HireTaxiServices from './TaxiServices/HireTaxiServices';
+import Gallery from './Gallery/Gallery';
+import Review from './Review/Review';
+import ContactUs from './ContactUs/ContactUs';
+import { Link } from 'react-router-dom';
 
 
 
@@ -31,13 +39,13 @@ const Footer = () => {
       <div className='flex footer-child sm:justify-start flex-col items-center'>
             <h1 className='text-white  mt-3 font-SignikaNegative text-xl'>Useful Links</h1>
             <ul className=' text-white mt-4 font-SignikaNegative  '>
-            <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><a href="/Home">Home</a></li>
-                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><a href="/AboutUs">About Us</a></li>
-                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><a href="/CuratedTours">Curated Tours</a></li>
-                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><a href="/TaxiServices">Taxi Services</a></li>
-                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><a href="/Gallery">Gallery</a></li>
-                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><a href="/GuestReview">Guest Review</a></li>
-                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><a href="/ContactUs">Contact Us</a></li>
+            <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><Link to="/">Home</Link></li>
+                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><Link to="/AboutUs">About Us</Link></li>
+                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><Link to="/CuratedTours">Curated Tours</Link></li>
+                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><Link to="/HireTaxiServices">Taxi Services</Link></li>
+                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><Link to="/Gallery">Gallery</Link></li>
+                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><Link to="/Review">Guest Review</Link></li>
+                <li className='transition-colors duration-300 ease-in-out hover:text-orange-400'><Link to="/ContactUs">Contact Us</Link></li>
             </ul>
          </div>
 

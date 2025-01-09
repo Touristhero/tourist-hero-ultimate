@@ -7,6 +7,8 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { RiThumbUpFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 import Booking from '../Booking';
+import FoodTour from '../TourCard-Details/FoodTour';
+
 
 const TourCard3 = () => {
   return (
@@ -45,7 +47,7 @@ const TourCard3 = () => {
               </div>
                
                <div className='flex'>
-                  <button className='mt-10 mb-2 ml-6 rounded-3xl px-4 py-2  bg-[#e38e3d] text-white'>Learn More</button>
+                  <button className='mt-10 mb-2 ml-6 rounded-3xl px-4 py-2  bg-[#e38e3d] text-white'><Link to='/FoodTour'>Learn More</Link></button>
                   <button className='mt-10 mb-2 ml-6 rounded-3xl px-4 py-2 bg-[#e38e3d] text-white'><Link to="/Booking" >Book Now</Link></button>
               </div>
            </div>

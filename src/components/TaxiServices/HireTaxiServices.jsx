@@ -17,6 +17,9 @@ import Review from '../Review/Review'
 import AboutUs1 from '../AboutUsMain/AboutUs1'
 import AboutUs from '../AboutUs'
 import Footer from '../Footer'
+import { Link } from 'react-router-dom'
+import ContactUs from '../ContactUs/ContactUs'
+
 
 const HireTaxiServices = () => {
   return (
@@ -40,7 +43,7 @@ const HireTaxiServices = () => {
                     <div className='flex items-center flex-col justify-center mt-5'>
                     <h1 className='text-slate-600 text-center  text-xl font-semibold'>Innova Crysta</h1>
 
-                    <button className='mt-4 text-center bg-[#e38e3d] px-6 py-2 text-white rounded '>Get Quote</button>
+                    <button className='mt-4 text-center bg-[#e38e3d] px-6 py-2 text-white rounded '><Link to="/ContactUs" >Get Quote</Link></button>
                     </div>
                 </div>
                 <div className=' fleet-child px-2 py-1 bg-zinc-300 rounded-lg flex flex-col'>
@@ -48,14 +51,14 @@ const HireTaxiServices = () => {
                     <div className='flex items-center flex-col justify-center mt-6 '>
                     <h1 className='text-slate-600 text-center  text-xl font-semibold'>Swift Dzire</h1>
 
-                    <button className='mt-4 text-center bg-[#e38e3d] px-6 py-2 text-white rounded '>Get Quote</button>
+                    <button className='mt-4 text-center bg-[#e38e3d] px-6 py-2 text-white rounded '><Link to="/ContactUs" >Get Quote</Link></button>
                     </div>
                 </div>
                 <div className='fleet-child px-2 py-0 bg-zinc-300 rounded-lg flex flex-col'>
                     <img className='object-cover w-[93%] ml-4' src={photo6} alt="" />
                     <h1 className='text-slate-600 text-center text-xl font-semibold'>Toyoto Etios </h1>
                     <div className='flex items-center justify-center'>
-                    <button className='mt-4 text-center bg-[#e38e3d] px-6 py-2 text-white rounded '>Get Quote</button>
+                    <button className='mt-4 text-center bg-[#e38e3d] px-6 py-2 text-white rounded '><Link to="/ContactUs" >Get Quote</Link></button>
                     </div>
                 </div>
 
@@ -64,7 +67,7 @@ const HireTaxiServices = () => {
                     <div className='flex items-center flex-col justify-center '>
                     <h1 className='text-slate-600 text-center  text-xl font-semibold'>Swift Dzire</h1>
 
-                    <button className='mt-4 text-center bg-[#e38e3d] px-6 py-2 text-white rounded '>Get Quote</button>
+                    <button className='mt-4 text-center bg-[#e38e3d] px-6 py-2 text-white rounded '><Link to="/ContactUs" >Get Quote</Link></button>
                     </div>
                 </div>
 

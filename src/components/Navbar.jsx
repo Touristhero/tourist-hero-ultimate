@@ -50,7 +50,7 @@ const Navbar = () => {
             <ul className={isOpen ? "nav-links active" : "nav-links  transition-all duration-300 ease-in-out "}>
                 <li   className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
-          }`} ><Link to="/Home" >Home</Link></li>
+          }`} ><Link to="/" >Home</Link></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><Link to="/AboutUs">About Us</Link></li>
