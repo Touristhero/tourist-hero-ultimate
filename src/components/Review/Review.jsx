@@ -7,10 +7,16 @@ import Photo4 from '../../assets/images/ReviewImages/reviewPhoto4.jpg'
 
 
 import { FaStar } from "react-icons/fa";
+import CuratedTours from '../CuratedTours'
+import Package from '../Package'
+import ImageGallery from '../Gallery/ImageGallery'
+import AboutUs from '../AboutUs'
+import Footer from '../Footer'
 const Review = () => {
   return (
-    <div>
-      <h1 className='tour-heading  ml-[5.3rem] mt-32 text-3xl  text-slate-700 font-semibold font-sans'>Guest Reviews</h1>
+<>
+<div>
+<h1 className='text-5xl font-semibold mt-32 text-center text-slate-500 font-SignikaNegative '>Guest Reviews </h1>
 
 
       <div className='review-container flex   px-20 mt-10 py-10 gap-6 '>
@@ -86,9 +92,16 @@ const Review = () => {
       </div>
 
       <div className='flex justify-center mt-10'>
-        <button className='bg-[#e38e3d] px-5 py-2  rounded-3xl text-white'>Read More</button>
+       <a target='blank' href="https://www.tripadvisor.in/Attraction_Review-g303884-d13551736-Reviews-Tourist_Hero_Amritsar-Amritsar_Amritsar_District_Punjab.html"> <button className='bg-[#e38e3d] px-5 py-2  rounded-3xl text-white'>Read More</button></a>
       </div>
     </div>
+
+    <CuratedTours/>
+    <Package/>
+    <ImageGallery/>
+    <AboutUs/>
+    <Footer/>
+</>
   )
 }
 

@@ -13,7 +13,7 @@ import Footer from '../Footer'
 const AboutUs1 = () => {
   return (
    <>
-  <Navbar2/>
+
         <div className=''>
        <h1 className='text-5xl font-semibold mt-32 text-center text-slate-500 font-SignikaNegative '>About Us </h1>
         <div className='flex about-us-main justify-start items-center lg:gap-14 md:gap-8 px-20 md:px-10 py-10 '>

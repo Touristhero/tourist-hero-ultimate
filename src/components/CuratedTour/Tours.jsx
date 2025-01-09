@@ -11,7 +11,7 @@ import Footer from '../Footer'
 const Tours = () => {
   return (
     <div>
-        <Navbar2/>
+        
            <h1 className='text-5xl font-semibold mt-32 text-center text-slate-500 font-SignikaNegative '>Curated Tour </h1>
           <Package/>
           <CuratedTours/>

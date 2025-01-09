@@ -3,14 +3,15 @@ import photo2 from '../../assets/images/WebsiteImages/guestcrowd.jpg'
 
 const AmritsarDay2 = () => {
   return (
-    <div className='package-container  gap-10 mt-10 '>
+    <div className='package-container flex gap-10 mt-10 justify-center   '>
            <a href="">
             <div className='relative'>
             <div className='absolute z-10 '>
             <h1 className='package-day-head p-5 text-7xl font-SignikaNegative font-semibold
                   ml-10 mt-6 text-white '>AMRITSAR DAY 2</h1>
             </div>
-                <ul className='absolute right-10 top-40 z-10  rounded-lg px-4 py-3' >
+                <ul className='absolute right-10 top-48 z-10  rounded-lg px-4 py-3' >
+                    
                       <li className='text-white text-xl font-SignikaNegative '> Durgiana Temple</li>
                       <li className='text-white text-xl font-SignikaNegative '>  Ram Tirath</li>
                       <li className='text-white text-xl font-SignikaNegative '> Partition Museum</li>

@@ -9,7 +9,7 @@ const DharamshalDay4 = () => {
            <div className='relative '>
             <h1 className='absolute package-day-head p-5 text-7xl font-SignikaNegative font-semibold
                   ml-10 mt-6 text-white z-10 '> DHARAM SHALA DAY 4</h1>
-                <ul className='absolute right-8 top-40 z-10  rounded-lg px-4 py-3' >
+                <ul className='absolute right-8 top-48 z-10  rounded-lg px-4 py-3' >
                       <li className='text-white text-xl font-SignikaNegative '> Dalai Lama Temple</li>
                       <li className='text-white text-xl font-SignikaNegative '> Church of St. John</li>
                       <li className='text-white text-xl font-SignikaNegative '> Naddi View Point</li>

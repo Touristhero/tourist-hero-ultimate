@@ -21,11 +21,38 @@ import NightCeremony from './components/TourCard-Details/NightCeremony'
 import HeritageWalk from './components/TourCard-Details/HeritageWalk'
 import HireTaxiServices from './components/TaxiServices/HireTaxiServices'
 import Tours from './components/CuratedTour/Tours'
+import AmritsarDay1 from './components/Itenery-Details/AmritsarDay1'
+import AmritsarDay1Details from './components/Package-Tour-Detail/AmritsarDay1Details'
+import AmritsarDay2 from './components/Itenery-Details/AmritsarDay2'
+import AmritsarDay2Details from './components/Package-Tour-Detail/AmritsarDay2Details'
+import AmritsarDay3Details from './components/Package-Tour-Detail/AmritsarDay3Details'
+import DharamshalDay4 from './components/Itenery-Details/DharamshalDay4'
+import DharamshalaDay4Details from './components/Package-Tour-Detail/DharamshalaDay4Details'
+import Gallery from './components/Gallery/Gallery'
+import ContactUs from './components/ContactUs/ContactUs'
+import { Route, Routes } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
+
 const App = () => {
   return (
 
 
     <div className='' >
+      <Navbar/>
+
+      <ScrollToTop/>
+      <Routes>
+        
+        <Route path='/Home' element={<Home/>} />  
+        <Route path='/AboutUs' element={<AboutUs1/>} />  
+        <Route path='/CuratedTours' element={<Tours/>} />  
+        <Route path='/HireTaxiServices' element={<HireTaxiServices/>} />  
+        <Route path='/Gallery' element={<Gallery/>} />  
+        <Route path='/Review' element={<Review/>} />  
+        <Route path='/ContactUs' element={<ContactUs/>} />  
+        <Route path='/Booking' element={<Booking/>}/>
+       
+      </Routes>
       {/* <Home/> */}
       {/* <Booking/> */}
       {/* <GoldenTemple/> */}
@@ -38,7 +65,13 @@ const App = () => {
       {/* <HireTaxiServices/> */}
       {/* <Package/> */}
       {/* <Tours/> */}
-      
+       {/* <AmritsarDay1Details/> */}
+       {/* <AmritsarDay2Details/> */}
+       {/* <AmritsarDay3Details/> */}
+       {/* <DharamshalaDay4Details/> */}
+       {/* <Gallery/> */}
+       {/* <Booking/> */}
+      {/* <ContactUs/> */}
      </div>
 
   )

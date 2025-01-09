@@ -43,22 +43,14 @@ const ImageGallery = () => {
     }
   }
   return (
-    // <div className='h-[100rem] '>
-    //   <h1 className='tour-heading  ml-[5.3rem] mt-24 text-4xl  text-slate-600 font-semibold font-sans'>Gallery </h1>
 
-    //   <div className='flex '>
-    //     <img className='w-[33%] object-cover' src={Photo1} alt="" />
-    //     <img className='w-[33%]' src={Photo2} alt="" />
-    //   </div>
-
-    // </div>
     <>
     
       {data.img && 
      <div
      className="fixed inset-0 bg-black bg-opacity-90 flex justify-center z-20 items-center"
      >  
-     <button onClick={()=>imgAction('') } className=' absolute top-8 z-2  right-7 font-semibold font-SignikaNegative text-xl rounded  bg-white px-4 '>X</button>
+     <button onClick={()=>imgAction('') } className=' absolute top- z-2  right-7 font-semibold font-SignikaNegative text-xl rounded  bg-white px-4 '>X</button>
      <button onClick={()=>imgAction('previous-image') } className='text-white bg-[#e38e3d] mr-5 px-4 py-2 rounded'>Previous</button>
         <img className="max-w-[90%] rounded-lg max-h-[90%] object-contain" src={data.img} alt="" />
         <button className='text-white bg-[#e38e3d] ml-5 px-4 py-2 rounded' onClick={()=>imgAction('next-image')}>Next</button>

@@ -5,6 +5,9 @@ import { FaStar } from "react-icons/fa";
 import { FaStarHalf } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { RiThumbUpFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
+import Booking from '../Booking';
+import WagahBorder from '../TourCard-Details/WagahBorder';
 
 const TourCard = () => {
   return (
@@ -43,8 +46,8 @@ const TourCard = () => {
               </div>
                
                <div className='flex'>
-                  <button className='mt-10 mb-2 ml-6 rounded-3xl px-4 py-2  bg-[#e38e3d] text-white'>Learn More</button>
-              <button className='mt-10 mb-2 ml-6 rounded-3xl px-4 py-2 bg-[#e38e3d] text-white'>Book Now </button>
+                  <button className='mt-10 mb-2 ml-6 rounded-3xl px-4 py-2  bg-[#e38e3d] text-white'><Link to="/WagahBorder">Learn More</Link></button>
+                  <button className='mt-10 mb-2 ml-6 rounded-3xl px-4 py-2 bg-[#e38e3d] text-white'><Link to="/Booking" >Book Now</Link></button>
               </div>
            </div>
           </div>

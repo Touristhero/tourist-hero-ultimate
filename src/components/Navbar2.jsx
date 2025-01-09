@@ -1,7 +1,14 @@
 import React, { useState ,useEffect} from 'react'
 import logo from '../assets/logos/tourist-hero-logo.png'
 import { FaBars } from "react-icons/fa";
-
+import {Link} from 'react-router-dom'
+import Home from './Home/Home';
+import CuratedTours from './CuratedTours';
+import AboutUs1 from './AboutUsMain/AboutUs1';
+import Review from './Review/Review';
+import Gallery from './Gallery/Gallery';
+import ContactUs from './ContactUs/ContactUs';
+import HireTaxiServices from './TaxiServices/HireTaxiServices';
 const Navbar2 = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +37,7 @@ const Navbar2 = () => {
 
   return (
    <>
+   
    <header className='  '>
      <div className='container   '>
          <nav className={`fixed top-0 left-0 w-full py-3 px-7 transition-colors duration-300 ${
@@ -40,27 +48,27 @@ const Navbar2 = () => {
                
             </div>
             <ul className={isOpen ? "nav-links active" : "nav-links  transition-all duration-300 ease-in-out "}>
-                <li   className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
+            <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
-          }`} ><a href="/Home">Home</a></li>
+          }`}><Link to="/AboutUs1"> About Us </Link></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
-          }`}><a href="/AboutUs">About Us</a></li>
+          }`}><Link to="/AboutUs1"> About Us </Link></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
-          }`}><a href="/CuratedTours">Curated Tours</a></li>
+          }`}><Link to="/CuratedTours">Curated Tours </Link></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
-          }`} ><a href="/TaxiServices">Taxi Services</a></li>
+          }`} ><Link to="/HireTaxiServices">Taxi Services </Link></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
-          }`}><a href="/Gallery">Gallery</a></li>
+          }`}><Link to="/CuratedTours">Gallery </Link></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
-          }`}><a href="/GuestReview">Guest Review</a></li>
+          }`}><Link to="/CuratedTours">Guest Reviews</Link></li>
                 <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
-          }`}><a href="/ContactUs">Contact Us</a></li>
+          }`}><Link to="/CuratedTours">Contact Us </Link></li>
 
             </ul>
 

@@ -12,7 +12,7 @@ import Footer from '../Footer'
 const VillageTour = () => {
   return (
     <>
-    <Navbar2/>
+  
   <div className='px-10 temple-container ' >
    <div className='flex flex-col items-center temple-child'>
     <h1 className='mt-32 temple-head text-5xl font-SignikaNegative font-semibold text-slate-500 mb-5' >Village Tour </h1>

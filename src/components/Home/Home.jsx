@@ -9,20 +9,22 @@ import ImageGallery from '../Gallery/ImageGallery'
 import Review from '../Review/Review'
 import AboutUs from '../AboutUs'
 import Footer from '../Footer'
+import GuestReview from '../Review/GuestReview'
 
 const Home = () => {
   return (
     <div>
-      <Navbar/>
+   
       <HeroSection/>
       <HeroSection2/>
       <CuratedTours/>
       <Package/>
       <TaxiServices/>
       <ImageGallery/>
-      <Review/>
+      <GuestReview/>
       <AboutUs/>
       <Footer/>
+      
     </div>
   )
 }

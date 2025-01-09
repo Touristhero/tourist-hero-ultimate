@@ -22,8 +22,8 @@ const HireTaxiServices = () => {
   return (
  <> 
        <div>
-       <h1 className='text-5xl font-semibold mt-32 text-center text-slate-500 font-SignikaNegative '>About Us </h1>
-        <Navbar2/>
+       <h1 className='text-5xl font-semibold mt-32 text-center text-slate-500 font-SignikaNegative '>Hire Taxi Services </h1>
+   
        <div className='p-14 taxi-container flex items-center justify-center  '>
               <img className='w-[35%]  rounded-lg' src={photo1} alt="" />
               <div className='flex flex-col items-center  '>
