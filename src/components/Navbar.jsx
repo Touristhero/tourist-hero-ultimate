@@ -10,6 +10,7 @@ import Gallery from './Gallery/Gallery';
 import ContactUs from './ContactUs/ContactUs';
 import HireTaxiServices from './TaxiServices/HireTaxiServices';
 
+
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +36,17 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleOptionClick = () => {
+    setIsOpen(false); // Hide the dropdown when an option is clicked
+  };
+
 
   return (
    <>
@@ -47,26 +59,27 @@ const Navbar = () => {
                 <img className='w-40' src={logo} alt="logo" />
                
             </div>
-            <ul className={isOpen ? "nav-links active" : "nav-links  transition-all duration-300 ease-in-out "}>
-                <li   className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
+            
+            <ul  className={isOpen ? "nav-links active" : "nav-links  transition-all duration-100 ease-in-out "}>
+                <li  onClick={handleOptionClick}   className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`} ><Link to="/" >Home</Link></li>
-                <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
+                <li onClick={handleOptionClick}  className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><Link to="/AboutUs">About Us</Link></li>
-                <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
+                <li onClick={handleOptionClick}  className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><Link to="/CuratedTours">Curated Tours</Link></li>
-                <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
+                <li onClick={handleOptionClick}  className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`} ><Link to="/HireTaxiServices">Taxi Services</Link></li>
-                <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
+                <li onClick={handleOptionClick}  className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><Link to="/Gallery">Gallery</Link></li>
-                <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
+                <li onClick={handleOptionClick}  className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><Link to="/Review">Guest Review</Link></li>
-                <li className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
+                <li onClick={handleOptionClick}  className={` font-OpenSans transition-colors duration-300 ease-in-out hover:text-orange-600 ${
             scrolled ? 'text-slate-600 ' : 'text-slate-600'
           }`}><Link to="/ContactUs">Contact Us</Link></li>
 
@@ -74,7 +87,9 @@ const Navbar = () => {
 
             
             <div className="icon z-10">
-            <FaBars onClick={toggleMenu} />
+            {/* <FaBars  onClick={toggleMenu} /> */}
+            <FaBars  onClick={toggleMenu} />
+
             </div>
          </nav>
     </div>

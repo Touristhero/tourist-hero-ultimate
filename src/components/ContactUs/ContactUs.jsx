@@ -7,9 +7,37 @@ import AboutUs from '../AboutUs'
 import Footer from '../Footer'
 import Swal from 'sweetalert2'
 import GuestReview from '../Review/GuestReview'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css';
+
+
 
 const ContactUs = () => {
-    
+  const [phoneNumber, setPhoneNumber] = useState('')
+  const [valid, setValid] = useState(true)
+  
+  const handleChange = (value)=>{
+    const formattedPhoneNumber = formatPhoneNumber(value);
+   setPhoneNumber(formattedPhoneNumber);
+   setValid(validatePhoneNumber(formattedPhoneNumber));
+  }
+  
+  const validatePhoneNumber =(phoneNumber)=>{
+    const phoneNumberPattern = /^\d{10}$/;
+    return phoneNumberPattern.length > 0 && PhoneInput.isValid(phoneNumber);
+    // return phoneNumberPattern.test(phoneNumber)
+  }
+  console.log(phoneNumber)
+  const formatPhoneNumber = (phoneNumber) => {
+    // This function ensures the correct format, including the "+" sign and space
+    if (phoneNumber && phoneNumber.startsWith('+')) {
+      const countryCode = phoneNumber.split(' ')[0]; // Get the country code part
+      const phoneNumber = phoneNumber.substring(countryCode.length).trim(); // Get the phone number without the country code
+      return `${countryCode} ${phoneNumber}`; // Add space between country code and phone number
+    }
+    return phoneNumber; // Return the original number if no country code
+  };
+
     const [message, setMessage] = useState('');
     
       const onSubmit = async (event) => {
@@ -20,6 +48,7 @@ const ContactUs = () => {
         const formData = new FormData(event.target);
     
         formData.append("access_key", "79b69c62-ac86-4f37-bfa1-884cf11a4686");
+        formData.append("phone",  phoneNumber );
     
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -68,11 +97,30 @@ const ContactUs = () => {
        <h1 className='mt-5 text-slate-600 '>Your Message</h1>
       <textarea cols="30" name="message" className='border-2 w-[82%]   border-gray-300 rounded outline-none 
        focus:border-orange-200  focus:outline-none focus:shadow-lg focus:shadow-orange-100 px-2  text-slate-600 py-1  ' placeholder='Enter your message' id=""></textarea>
+        <div className='w-[82%]' >
+      <label className='flex mt-4 text-slate-600' >Phone Number</label>
+      <PhoneInput  placeholder='Enter your phone number'  name='Phone Number' 
+       type='PhoneNumber'
+       value={phoneNumber} 
+       onChange={handleChange}
+       inputProps={{
+        required:true, 
+        
+       }}
+       inputStyle={{
+        width: '100%', // Set the width
+        height: '35px',  // Set the height
+        fontSize: '14px',
+        // Set the font size
+      }}
+       country={'us'}/>
+       {/* {! valid && <p className='mb-3 mt-3 text-red-500'>Please Enter Valid Phone Number</p>} */}
+</div>
        <h1 className='mt-5 text-slate-600 '>Select the dates</h1>
         <div className='flex booking-child '>
        <input required className='border-2 w-[40%] border-gray-300 rounded outline-none 
        focus:border-orange-200 focus:outline-none focus:shadow-lg focus:shadow-orange-100 px-2 py-1 text-slate-600 ' name='date' type="date" />
-         
+    
          <select name="Number Of Person" className='input-child border-2 w-[40%] ml-3 px-3 py-2 rounded ' id="">
           <option value="NumberOfPerson" selected disabled>Number of person</option>
           <option value="1">1</option>
@@ -91,12 +139,12 @@ const ContactUs = () => {
        </div>
        <select required  name="transportation" className='border-2 w-[82%] mt-5 px-3 py-2 rounded '  id="">
         <option value="Choose Transportation" selected disabled> Choose Transportation</option>
-        <option value="">Swift Dzire (3 seater)</option>
-        <option value="">Toyoto Etios (3 seater) </option>
-        <option value="">Innova Crysta (6 seater)</option>
-        <option value="">Tempo Traveller 12 seater</option>
-        <option value="">Tempo Traveller 17 seater</option>
-        <option value="">Without Any Transportation</option>
+        <option value="Swift Dzire (3 seater)">Swift Dzire (3 seater)</option>
+        <option value="Toyoto Etios (3 seater)">Toyoto Etios (3 seater) </option>
+        <option value="Innova Crysta (6 seater)">Innova Crysta (6 seater)</option>
+        <option value="Tempo Traveller 12 seater">Tempo Traveller 12 seater</option>
+        <option value="Tempo Traveller 17 seater">Tempo Traveller 17 seater</option>
+        <option value="Without Any Transportation">Without Any Transportation</option>
 
       </select>
       <button type='submit' onSubmit={onSubmit}  className='w-[82%] bg-[#e38e3d] mt-10 text-lg py-2 font-OpenSans text-white rounded'>Submit </button>
