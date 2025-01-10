@@ -22,8 +22,8 @@ const HeroSection = () => {
       <h2 className='text-white text-center text-5xl font-semibold mb-3'>{heading}</h2>
       <p className='text-white text-lg text-center'> {description} </p>
       <div className='flex items-center justify-center'>
-  = <button className='bg-white book-button hover:bg-[#e38e3d] 
-      transition-all duration-300 ease-in-out px-4 py-2 mt-14 rounded-xl font-sans  w-1/2 '> <Link to="/Booking">BOOK YOUR TOUR NOW</Link> </button>=
+      <Link to="/Booking"> <button className='bg-white book-button hover:bg-[#e38e3d] 
+      transition-all duration-300 ease-in-out px-4 py-2 mt-14 rounded-xl font-sans  w-full '> BOOK YOUR TOUR NOW</button> </Link> 
       </div>
     </div>
     </div>

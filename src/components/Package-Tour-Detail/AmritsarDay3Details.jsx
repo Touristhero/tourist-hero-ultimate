@@ -83,8 +83,8 @@ The ceremony begins in the early hours of the morning or evening, depending on t
 
 The Palki Sahib is an elaborate wooden structure adorned with fine decorations, often gold-plated, that is lifted with care and precision by the devotees. The procession is marked by prayers and hymns, with the Harmandir Sahib reverberating with the melodious recitations of Gurbani (Sikh hymns). This ceremony is an expression of devotion and respect towards the Guru, fostering a sense of community and spiritual unity.</p>
             </div>
-
-            <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[40%] rounded-3xl'><Link to="/Booking" >Book Now</Link></button></div>
+            <Link to="/Booking" >
+            <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[40%] rounded-3xl'>Book Now</button></div></Link>
              
             <h1 className='text-[2.5rem] mt-20 font-SignikaNegative font-semibold text-slate-600'>Other Packages</h1>
             <div className='flex package-container  gap-10 justify-center  ' >

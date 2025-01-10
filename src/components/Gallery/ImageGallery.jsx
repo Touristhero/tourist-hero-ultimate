@@ -78,7 +78,7 @@ const ImageGallery = () => {
     </div>
 
     <div className='flex justify-center mt-10'>
-        <button className='bg-[#e38e3d] px-5 py-2  rounded-3xl text-white'><Link to="/Gallery">View More</Link></button>
+    <Link to="/Gallery">    <button className='bg-[#e38e3d] px-5 py-2  rounded-3xl text-white'>View More</button> </Link> 
       </div>
     </>
   )

@@ -85,8 +85,8 @@ Spread over 43 acres, Gobindgarh Fort now serves as a vibrant cultural hub. It h
 
 The fort also features a well-maintained bazaar, where traditional Punjabi cuisine and crafts are available. A light and sound show in the evening further enhances the visitor experience. Gobindgarh Fort stands as a testament to Punjab's rich heritage, offering a blend of history, culture, and entertainment.</p>
             </div>
-
-            <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[40%] rounded-3xl'><Link to="/Booking" >Book Now</Link></button></div>
+            <Link to="/Booking" >
+            <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[40%] rounded-3xl'>Book Now</button></div></Link>
              
             <h1 className='text-[2.5rem] mt-20 font-SignikaNegative font-semibold text-slate-600'>Other Packages</h1>
             <div className='flex package-container  gap-10 justify-center  ' >

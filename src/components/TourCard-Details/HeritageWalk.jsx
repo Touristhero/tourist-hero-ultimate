@@ -48,7 +48,8 @@ const HeritageWalk = () => {
     
   </div>
 
-  <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[30%] rounded-3xl'><Link to="/Booking" >Book Now</Link></button></div>
+  <Link to="/Booking" >
+  <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[30%] rounded-3xl'>Book Now</button></div></Link>
     </div>
       
      <Package/>

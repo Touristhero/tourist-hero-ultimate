@@ -309,7 +309,7 @@ header {
     width: 80%;
   }
   .taxi-container button {
-    width:40% ;
+    width:140% ;
  }
 }
 
@@ -324,7 +324,7 @@ header {
     width: 90%;
   }
   .taxi-container button {
-   width:80% ;
+   width:100% ;
 }
 .taxi-container p {
   margin-top: 2rem;
@@ -661,4 +661,12 @@ position: absolute;
     position: absolute;
  right: 0;
    }
+}
+
+@media (max-width:691px) {
+  .founder-head{
+    text-align: center;
+    width: 100%;
+    margin-left: 5px;
+  }
 }

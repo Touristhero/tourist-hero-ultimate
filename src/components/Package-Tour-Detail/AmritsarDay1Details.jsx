@@ -96,10 +96,10 @@ The figures released by the British government were 370 dead and 1200 wounded. O
                 <h2 className='mt-7  text-[1.8rem] font-SignikaNegative font-semibold text-orange-600'> Shopping </h2>
                 <p className='leading-9 text-lg text-slate-600'> Shopping in Amritsar is one of the interests for tourists coming to the holy city. The state of Punjab has a fairly rich tradition of handicrafts and handlooms. No matter where you look, you will find a wide variety of bright colour dresses. Most famous shopping items are: </p>
                 <ul className='leading-9 text-lg text-slate-600 mt-4'>
-                    <li>•	Patiala Salwar: female loose trousers which have folds of cloth stitched together that meet at the bottom.</li>
-                    <li>•	Phulkari: literally means flower work, this is the embroidery technique from this region. You can buy dresses/shawls with this embroidery.</li>
+                    <li>• <span className='font-semibold'>Patiala Salwar </span>	:It is female loose trousers which have folds of cloth stitched together that meet at the bottom.</li>
+                    <li>• <span  className='font-semibold'>Phulkari</span>: It literally means flower work, this is the embroidery technique from this region. You can buy dresses/shawls with this embroidery.</li>
                     <li>
-                    •	Punjabi Jutti: made of leather and extensive embroidery, Jutti is the traditional footwear of this region.  
+                    •	<span  className='font-semibold'>Punjabi Jutti</span>:Its made of leather and extensive embroidery, Jutti is the traditional footwear of this region.  
                     </li>
                 </ul>
                 </div>
@@ -130,8 +130,8 @@ The ceremony begins in the early hours of the morning or evening, depending on t
 
 The Palki Sahib is an elaborate wooden structure adorned with fine decorations, often gold-plated, that is lifted with care and precision by the devotees. The procession is marked by prayers and hymns, with the Harmandir Sahib reverberating with the melodious recitations of Gurbani (Sikh hymns). This ceremony is an expression of devotion and respect towards the Guru, fostering a sense of community and spiritual unity.</p>
                 </div>
-
-                <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[40%] rounded-3xl'><Link to="/Booking" >Book Now</Link></button></div>
+                <Link to="/Booking" >
+                <div className='flex items-center justify-center'> <button className='py-2 bg-[#e38e3d] text-white  px-4 mt-10 w-[40%] rounded-3xl'>Book Now</button></div></Link>
                  
                 <h1 className='text-[2.5rem] mt-20 font-SignikaNegative font-semibold text-slate-600'>Other Packages</h1>
                 <div className='flex package-container  gap-10 justify-center  ' >
