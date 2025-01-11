@@ -6,7 +6,7 @@ import { BrowserRouter, HashRouter, Route } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename='/tourist-hero-ultimate/'>
+    <BrowserRouter basename='/tourist-hero-ultimate'>
    
       <App/>
     
